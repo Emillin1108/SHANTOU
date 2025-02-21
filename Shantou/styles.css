@@ -11,6 +11,8 @@ header {
   color: white;
   padding: 20px 0;
   position: fixed;
+   top: 0; /* 确保导航栏紧贴顶部 */
+  left: 0;
   width: 100%;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -176,6 +178,7 @@ nav {
   margin: 10px;
 }
 
+/* 原按钮样式 */
 .featured-item button {
   margin: 10px;
   background-color: #0096FF;
@@ -190,6 +193,25 @@ nav {
 .featured-item button:hover {
   background-color: #007BFF;
 }
+
+/* 新增 a 标签样式 */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  background-color: #0096FF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #007BFF;
+}
+
 
 /* 文化介绍区样式 */
 .culture-intro {
@@ -227,3 +249,27 @@ footer {
   text-align: center;
   padding: 20px 0;
 }
+
+/* 其他样式代码... */
+
+.clickable-prompt {
+  display: inline-block;
+  margin-left: 10px; /* 设置提示符与按钮的间距 */
+  color: #0096FF; /* 设置提示符的颜色 */
+  font-size: 14px; /* 设置提示符的字体大小 */
+  animation: blink 1.5s infinite; /* 添加闪烁动画 */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 其他样式代码... */
